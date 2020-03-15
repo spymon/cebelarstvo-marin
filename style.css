@@ -1,0 +1,80 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,600|Prompt:400,500&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: ;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  background-color: #111;
+  border-bottom: 3px solid orange;
+  box-shadow: 0px 5px 16px 0px rgba(51, 51, 51, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+}
+header div {
+  padding-top: 5px;
+  text-align: left;
+  color: #fff;
+}
+.header .prvi {
+  letter-spacing: 7px;
+  font-size: 1.5rem;
+  font-family: 'Prompt', sans-serif;
+  text-transform: uppercase;
+}
+.header .drugi {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.header .container {
+  display: flex;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Header nav */
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+header nav ul a {
+  padding: 5px 10px;
+  text-decoration: none;
+  font-family: 'Prompt', sans-serif;
+  color: #fff;
+}
+
+/* Showcase */
+
+.showcase {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/showcase.jpg) center/cover no-repeat;
+  width: 100%;
+  height: calc(100vh - 106px);
+  margin-top: 106px;
+}
+
+.main {
+  width: 100%;
+  min-height: 200vh;
+  background: #fff;
+  border-top: 3px solid orange;
+}

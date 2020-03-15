@@ -10,6 +10,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fdfdfd;
+}
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /* Header */
 .header {
   background-color: #111;
@@ -60,6 +71,7 @@ header nav ul a {
   text-decoration: none;
   font-family: 'Prompt', sans-serif;
   color: #fff;
+  text-transform: uppercase;
 }
 
 /* Showcase */
@@ -72,9 +84,71 @@ header nav ul a {
   margin-top: 106px;
 }
 
-.main {
+.izdelki {
   width: 100%;
-  min-height: 200vh;
-  background: #fff;
   border-top: 3px solid orange;
+}
+
+/* Izdelki */
+
+.izdelki {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.izdelki-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.izdelek {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.izdelek-slika {
+  overflow: hidden;
+  width: 50%;
+}
+
+.izdelek-slika img {
+  display: block;
+  width: 80%;
+  min-height: 12rem;
+  border-radius: 4px;
+  box-shadow: 0px 5px 16px 0px rgba(51, 51, 51, 0.8);
+}
+
+.izdelek-text {
+  color: #333;
+  width: 50%;
+  padding-left: 25px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; */
+}
+
+.izdelek-text h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  text-transform: uppercase;
+  border: none;
+  background-color: orange;
+  font-family: 'Prompt', sans-serif;
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+
+.izdelki h2 {
+  font-size: 2rem;
+  font-family: 'Prompt', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 4rem 0;
+  color: #333;
 }

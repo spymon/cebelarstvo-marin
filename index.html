@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Čebelarstvo Marin</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo">
-          <p class="prvi">čebelarstvo</p>
-          <p class="drugi">marin</p>
-        </div>
+        <a href="#domov"
+          ><img class="logo" src="./images/CebelarstvoMarin_logotip2.jpg" alt=""
+        /></a>
         <nav>
           <ul>
-            <li><a href="#domov">Domov</a></li>
             <li><a href="#izdelki">Izdelki</a></li>
             <li><a href="#galerija">Galerija</a></li>
             <li><a href="#abaut">O meni</a></li>
@@ -25,9 +24,12 @@
       </div>
     </header>
     <!-- showcase -->
-    <section class="showcase"></section>
+    <div id="domov" class="behind-nav"></div>
+    <section class="showcase">
+      <h1>Test text</h1>
+    </section>
     <!-- Izdelki -->
-    <section class="izdelki">
+    <section id="izdelki" class="izdelki">
       <div class="container">
         <h2 class="heading-3">Izdelki</h2>
         <div class="izdelki-container">

@@ -3,7 +3,10 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (
+    document.body.scrollTop > 120 ||
+    document.documentElement.scrollTop > 120
+  ) {
     document.querySelector('.logo').style.width = '180px';
   } else {
     document.querySelector('.logo').style.width = '300px';

@@ -98,10 +98,10 @@ body {
 }
 
 .logo {
-  transition: 0.2s;
   padding: 0;
   width: 300px;
   padding: 7px 0;
+  transition: 0.3s;
 }
 
 .header .container {
@@ -120,6 +120,7 @@ header nav ul {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 header nav ul a {
@@ -131,7 +132,7 @@ header nav ul a {
   display: inline-block;
   transition: 0.3s;
   border-bottom: 2px solid var(--primaryWhite);
-  margin: 0 5px;
+  margin: 10px 5px;
 }
 
 header nav ul a:hover {
@@ -141,8 +142,8 @@ header nav ul a:hover {
 
 /* Showcase */
 .behind-nav {
-  width: 100%;
-  height: 158.98px;
+  width: 1px;
+  height: 1px;
 }
 
 .showcase {
@@ -150,14 +151,15 @@ header nav ul a:hover {
     url(images/showcase.jpg) center/cover no-repeat;
   width: 100%;
   height: calc(100vh - 158.98px);
-  color: #fff;
+  color: var(--primaryWhite);
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  align-items: center;
   font-family: inherit;
 }
 .showcase h1 {
-  padding-top: 10%;
+  font-size: 3rem;
+  font-family: inherit;
 }
 
 /* IZDELKI */
@@ -223,8 +225,11 @@ header nav ul a:hover {
 .kontakt {
   width: 100%;
   min-height: 100vh;
-  padding: 120px 0 2rem;
   text-align: center;
+}
+
+.pd-top {
+  /* only for js selection */
 }
 
 /* Header media */

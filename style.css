@@ -230,6 +230,7 @@ header nav ul a:hover {
 
 .pd-top {
   /* only for js selection */
+  display: block;
 }
 
 /* Header media */

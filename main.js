@@ -13,8 +13,6 @@ function scrollFunction() {
 }
 
 /* changing height of the section based on height of the header */
-/* let headerHeight = 0; */
-
 let headerHeight = 0;
 let showcase = document.querySelector('.showcase');
 let behindNav = document.querySelector('.behind-nav');

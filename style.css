@@ -28,6 +28,33 @@ body {
   font-family: 'Prompt', sans-serif;
 }
 
+.h2-heading {
+  display: inline-block;
+  font-size: 3rem;
+  font-family: 'Prompt', sans-serif;
+  text-transform: capitalize;
+  letter-spacing: var(--primaryLetterSpacing);
+  margin-bottom: 90px;
+  padding: 0.5rem 3rem;
+  position: relative;
+}
+
+.white {
+  color: var(--primaryWhite);
+}
+
+.black {
+  color: var(--primaryBlack);
+}
+
+.bg-white {
+  background-color: var(--primaryWhite);
+}
+
+.bg-black {
+  background-color: var(--primaryBlack);
+}
+
 .container {
   width: 90%;
   max-width: 1080px;
@@ -135,30 +162,16 @@ header nav ul a:hover {
 
 /* IZDELKI */
 .izdelki {
-  width: 100%;
   border-top: 3px solid var(--PrimaryYellow);
-  padding: 120px 1.5rem 2rem;
-  min-height: 100vh;
 }
 
 .izdelki-container {
   width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
   grid-gap: 3rem 2rem;
   justify-content: center;
-}
-
-.izdelki h2 {
-  display: inline-block;
-  font-size: 3rem;
-  font-family: 'Prompt', sans-serif;
-  text-transform: capitalize;
-  letter-spacing: var(--primaryLetterSpacing);
-  margin-bottom: 90px;
-  color: #333;
-  padding: 0.5rem 3rem;
-  position: relative;
 }
 
 .izdelek {
@@ -204,8 +217,14 @@ header nav ul a:hover {
   border-radius: 5px;
 }
 
-.galerija {
+.izdelki,
+.galerija,
+.abaut,
+.kontakt {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--primaryBlack);
+  padding: 120px 0 2rem;
+  text-align: center;
 }
+
+/* Header media */

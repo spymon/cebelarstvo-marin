@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Čebelarstvo Marin</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="domov" class="behind-nav"></div>
+    <!-- HEADER -->
     <header class="header">
       <div class="container">
-        <a href="#domov"
-          ><img
-            class="logo"
-            src="./images/CebelarstvoMarin_logotip2.jpg"
-            alt="čebelarstvo marin logo"
-        /></a>
+        <a class="logo-link-container" href="#domov"
+          ><div class="logo"></div
+        ></a>
         <nav>
           <ul>
             <li><a href="#izdelki">Izdelki</a></li>
@@ -27,14 +28,18 @@
         </nav>
       </div>
     </header>
-    <!-- showcase -->
+    <!-- END OF HEADER -->
+
+    <!-- SHOWCASE -->
     <section class="showcase">
       <div class="container">
         <h1>Lorem ipsum dolor sit amet.</h1>
       </div>
     </section>
+    <!-- END OF SHOWCASE -->
+
     <!-- IZDELKI -->
-    <section id="izdelki" class="izdelki pd-top">
+    <section id="izdelki" class="izdelki bg-white">
       <div class="container">
         <h2 class="frame h2-heading black">Izdelki</h2>
         <div class="izdelki-container">
@@ -74,18 +79,26 @@
         </div>
       </div>
     </section>
+    <!-- END OF IZDELKI -->
+
     <!-- GALERIJA -->
-    <section id="galerija" class="galerija bg-black pd-top">
+    <section id="galerija" class="galerija bg-black">
       <h2 class="h2-heading frame white">galerija</h2>
       <div class="container"></div>
     </section>
-    <!-- O MENI -->
-    <section id="abaut" class="abaut bg-white pd-top">
+    <!-- END OF GALERIJA -->
+    <!-- ABAUT -->
+    <section id="abaut" class="abaut bg-white">
       <h2 class="h2-heading black frame">o meni</h2>
     </section>
+    <!-- END OF ABAUT -->
+
     <!-- KONTAKT -->
-    <section id="kontakt" class="kontakt bg-black pd-top">
+    <section id="kontakt" class="kontakt bg-black">
       <h2 class="h2-heading frame white">kontakt</h2>
     </section>
+    <!-- END OF KONTAKT -->
+
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -2,18 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,600|Prompt:400,500&display=swap');
 
-/* Root */
+/* ROOT */
+
 :root {
   --primaryWhite: #fcfeff;
   --primaryBlack: #35363a;
   --PrimaryYellow: #f7d433;
-  --primaryShaddow: 0px 0px 10px 0px rgba(51, 51, 51, 0.8);
+  --primaryShaddow: 1px 3px 10px 0px rgba(51, 51, 51, 0.5);
   --primaryLetterSpacing: 3px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* RESET */
 
 *,
 *::after,
@@ -23,9 +22,25 @@ html {
   box-sizing: border-box;
 }
 
+/* GENERAL STYLING */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--primaryWhite);
   font-family: 'Prompt', sans-serif;
+}
+
+.izdelki,
+.galerija,
+.abaut,
+.kontakt {
+  padding: 120px 0;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
 }
 
 .h2-heading {
@@ -34,7 +49,7 @@ body {
   font-family: 'Prompt', sans-serif;
   text-transform: capitalize;
   letter-spacing: var(--primaryLetterSpacing);
-  margin-bottom: 90px;
+  margin-bottom: 3rem;
   padding: 0.5rem 3rem;
   position: relative;
 }
@@ -81,37 +96,55 @@ body {
   height: 4px;
   bottom: 0;
   right: 0;
-  transform: translateX(0);
 }
 
-/* Header */
+/* HEADER */
+
 .header {
   background-color: var(--primaryWhite);
   border-bottom: 3px solid var(--PrimaryYellow);
   box-shadow: var(--primaryShaddow);
   position: fixed;
+  height: 17vh;
+  min-height: 100px;
   top: 0;
-  right: 0;
-  display: block;
   width: 100%;
   z-index: 99;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
 }
 
-.logo {
-  padding: 0;
-  width: 300px;
-  padding: 7px 0;
-  transition: 0.3s;
+.logo-link-container {
+  display: block;
+  height: 90%;
+  width: 30%;
+  min-width: 180px;
 }
 
 .header .container {
   display: flex;
   width: 90%;
+  height: 100%;
   max-width: 1080px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+.logo {
+  min-width: 180px;
+  max-width: 400px;
+  height: 100%;
+  background: url(./images/CebelarstvoMarin_logotip2.jpg) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* ON SCROLL EFFECT CSS */
+
+.shrink {
+  height: 80px;
 }
 
 /* Header nav */
@@ -121,6 +154,7 @@ header nav ul {
   list-style: none;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 header nav ul a {
@@ -130,9 +164,7 @@ header nav ul a {
   color: #333;
   text-transform: uppercase;
   display: inline-block;
-  transition: 0.3s;
   border-bottom: 2px solid var(--primaryWhite);
-  margin: 10px 5px;
 }
 
 header nav ul a:hover {
@@ -140,32 +172,30 @@ header nav ul a:hover {
   transform: translateY(-10px);
 }
 
-/* Showcase */
-.behind-nav {
-  width: 1px;
-  height: 1px;
-}
+/* SHOWCASE */
 
 .showcase {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(images/showcase.jpg) center/cover no-repeat;
   width: 100%;
-  height: calc(100vh - 158.98px);
+  height: 100vh;
   color: var(--primaryWhite);
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: inherit;
+  border-bottom: 3px solid var(--PrimaryYellow);
 }
 .showcase h1 {
+  display: inline-block;
   font-size: 3rem;
   font-family: inherit;
+  padding: 2rem 3rem;
+  border: 3px solid var(--primaryWhite);
+  background: rgba(250, 250, 250, 0.15);
 }
 
 /* IZDELKI */
-.izdelki {
-  border-top: 3px solid var(--PrimaryYellow);
-}
 
 .izdelki-container {
   width: 90%;
@@ -181,13 +211,12 @@ header nav ul a:hover {
   flex-direction: column;
   box-shadow: var(--primaryShaddow);
   border-radius: 5px;
-  min-width: 250px;
   overflow: hidden;
 }
 
 .izdelek img {
   overflow: hidden;
-  height: 300px;
+  max-height: 250px;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -211,26 +240,46 @@ header nav ul a:hover {
 }
 
 .btn {
+  font-weight: 500;
+  letter-spacing: 1px;
   text-transform: uppercase;
   border: none;
   background-color: var(--PrimaryYellow);
   font-family: 'Prompt', sans-serif;
   padding: 10px 20px;
   border-radius: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  box-shadow: var(--primaryShaddow);
+  cursor: pointer;
+  transition: transform 50ms ease-in-out;
 }
 
-.izdelki,
-.galerija,
-.abaut,
-.kontakt {
-  width: 100%;
-  min-height: 100vh;
-  text-align: center;
+.btn:hover {
+  transform: scale(1.02);
 }
 
-.pd-top {
-  /* only for js selection */
-  display: block;
+.btn:active {
+  box-shadow: none;
 }
 
 /* Header media */
+@media (max-width: 850px) {
+}
+
+@media (max-width: 650px) {
+  .logo-link-container {
+    margin-top: 15px 0;
+  }
+
+  .header .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  header nav ul a {
+    font-size: 12px;
+  }
+}

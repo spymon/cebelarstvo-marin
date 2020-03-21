@@ -73,6 +73,7 @@ body {
 .container {
   width: 90%;
   max-width: 1080px;
+  height: 100%;
   margin: 0 auto;
   text-align: center;
   padding: 0;
@@ -124,10 +125,6 @@ body {
 
 .header .container {
   display: flex;
-  width: 90%;
-  height: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -175,8 +172,8 @@ header nav ul a:hover {
 /* SHOWCASE */
 
 .showcase {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/showcase.jpg) center/cover no-repeat;
+  background: /* linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */ url(images/7489868.jpg)
+    center/cover no-repeat;
   width: 100%;
   height: 100vh;
   color: var(--primaryWhite);
@@ -186,13 +183,71 @@ header nav ul a:hover {
   font-family: inherit;
   border-bottom: 3px solid var(--PrimaryYellow);
 }
+
+.showcase .container {
+  position: relative;
+}
+
 .showcase h1 {
   display: inline-block;
   font-size: 3rem;
   font-family: inherit;
+  letter-spacing: var(--primaryLetterSpacing);
   padding: 2rem 3rem;
   border: 3px solid var(--primaryWhite);
   background: rgba(250, 250, 250, 0.15);
+}
+
+.down-arrow {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: calc(-100% + 210px);
+  left: calc(50% + -100px);
+  font-family: 'Prompt', sans-serif;
+  letter-spacing: var(--primaryLetterSpacing);
+  color: rgba(250, 250, 250, 0.5);
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.down-arrow:hover {
+  background-color: rgba(250, 250, 250, 0.2);
+}
+
+.down-arrow .one {
+  color: rgba(250, 250, 250, 0.25);
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  font-size: 125px;
+  transform: translate(-50%, -50%);
+  animation: bounce 1s infinite;
+}
+
+.down-arrow .two {
+  color: rgba(250, 250, 250, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  font-size: 175px;
+  animation: bounce 1s infinite;
+}
+
+/* BOUNCE ANIMACION */
+
+@keyframes bounce {
+  50% {
+    transform: translate(-50%, -50%) translateY(-50px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
 }
 
 /* IZDELKI */

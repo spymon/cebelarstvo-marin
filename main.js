@@ -2,10 +2,10 @@ $(document).ready(function() {
   $(document).on('scroll', function() {
     if ($(document).scrollTop() > 100) {
       $('header').addClass('shrink');
-      $('.down-arrow').fadeOut();
+      $('.down-arrow-container').fadeOut();
     } else {
       $('header').removeClass('shrink');
-      $('.down-arrow').fadeIn();
+      $('.down-arrow-container').fadeIn();
     }
   });
 

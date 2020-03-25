@@ -1,116 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Čebelarstvo Marin</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container">
-        <a class="logo-link-container" href="#domov"
-          ><div class="logo"></div
-        ></a>
-        <nav>
-          <ul>
-            <li><a href="#izdelki">Izdelki</a></li>
-            <li><a href="#galerija">Galerija</a></li>
-            <li><a href="#abaut">O meni</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- END OF HEADER -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Čebelarstvo Marin</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon-1.png" />
+		<!-- Font Awesome link -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<!-- Main style CSS link -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="css/magnific-popup.css" />
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class="header">
+			<div class="container">
+				<a class="logo-link-container" href="#domov"
+					><div class="logo"></div
+				></a>
+				<nav>
+					<ul>
+						<li><a href="#izdelki">Izdelki</a></li>
+						<li><a href="#galerija">Galerija</a></li>
+						<li><a href="#abaut">O meni</a></li>
+						<li><a href="#kontakt">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- END OF HEADER -->
 
-    <!-- SHOWCASE -->
-    <section class="showcase">
-      <div class="container">
-        <a href="#izdelki" class="down-arrow-container">
-          <p>izdelki</p>
-          <div class="down-arrow">
-            <i class="fas fa-angle-down one"></i>
-            <i class="fas fa-angle-down two"></i>
-          </div>
-        </a>
-      </div>
-    </section>
-    <!-- END OF SHOWCASE -->
+		<!-- SHOWCASE -->
+		<section class="showcase">
+			<div class="container">
+				<a href="#izdelki" class="down-arrow-container">
+					<p>izdelki</p>
+					<div class="down-arrow">
+						<i class="fas fa-angle-down one"></i>
+						<i class="fas fa-angle-down two"></i>
+					</div>
+				</a>
+			</div>
+		</section>
+		<!-- END OF SHOWCASE -->
 
-    <!-- IZDELKI -->
-    <section id="izdelki" class="izdelki bg-white">
-      <div class="container">
-        <h2 class="frame h2-heading black">Izdelki</h2>
-        <div class="izdelki-container">
-          <!-- Izdelek -->
-          <article class="izdelek">
-            <img src="./images/izdelek-1.png" alt="" />
-            <div class="izdelek-text">
-              <h3>Cvetlični med</h3>
-              <p>
-                količina: 900g
-              </p>
-              <button class="btn">Dodaj v košarico</button>
-            </div>
-          </article>
-          <!-- Izdelek -->
-          <article class="izdelek">
-            <img src="./images/izdelek-2.png" alt="" />
-            <div class="izdelek-text">
-              <h3>akacijev med</h3>
-              <p>
-                količina: 250g
-              </p>
-              <button class="btn">Dodaj v košarico</button>
-            </div>
-          </article>
-          <!-- Izdelek -->
-          <article class="izdelek">
-            <img src="./images/izdelek-3.png" alt="" />
-            <div class="izdelek-text">
-              <h3>kostanjev med</h3>
-              <p>
-                količina: 130g
-              </p>
-              <button class="btn">Dodaj v košarico</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- END OF IZDELKI -->
+		<!-- IZDELKI -->
+		<section id="izdelki" class="izdelki bg-white">
+			<div class="container">
+				<h2 class="frame h2-heading black">Izdelki</h2>
+				<div class="izdelki-container">
+					<!-- Izdelek -->
+					<article class="izdelek">
+						<img src="./images/izdelek-1.png" alt="" />
+						<div class="izdelek-text">
+							<h3>Cvetlični med</h3>
+							<p>
+								količina: 900g
+							</p>
+							<button class="btn">Dodaj v košarico</button>
+						</div>
+					</article>
+					<!-- Izdelek -->
+					<article class="izdelek">
+						<img src="./images/izdelek-2.png" alt="" />
+						<div class="izdelek-text">
+							<h3>akacijev med</h3>
+							<p>
+								količina: 250g
+							</p>
+							<button class="btn">Dodaj v košarico</button>
+						</div>
+					</article>
+					<!-- Izdelek -->
+					<article class="izdelek">
+						<img src="./images/izdelek-3.png" alt="" />
+						<div class="izdelek-text">
+							<h3>kostanjev med</h3>
+							<p>
+								količina: 130g
+							</p>
+							<button class="btn">Dodaj v košarico</button>
+						</div>
+					</article>
+					<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+					<!-- Izdelek -->
+					<article class="izdelek">
+						<img src="./images/izdelek-1.png" alt="" />
+						<div class="izdelek-text">
+							<h3>Cvetlični med</h3>
+							<p>
+								količina: 900g
+							</p>
+							<button class="btn">Dodaj v košarico</button>
+						</div>
+					</article>
+					<!-- Izdelek -->
+					<article class="izdelek">
+						<img src="./images/izdelek-2.png" alt="" />
+						<div class="izdelek-text">
+							<h3>akacijev med</h3>
+							<p>
+								količina: 250g
+							</p>
+							<button class="btn">Dodaj v košarico</button>
+						</div>
+					</article>
+					<!-- Izdelek -->
+					<article class="izdelek">
+						<img src="./images/izdelek-3.png" alt="" />
+						<div class="izdelek-text">
+							<h3>kostanjev med</h3>
+							<p>
+								količina: 130g
+							</p>
+							<button class="btn">Dodaj v košarico</button>
+						</div>
+					</article>
+					<!-- Izdelek -->
+					<article class="izdelek">
+						<img src="./images/izdelek-1.png" alt="" />
+						<div class="izdelek-text">
+							<h3>Cvetlični med</h3>
+							<p>
+								količina: 900g
+							</p>
+							<button class="btn">Dodaj v košarico</button>
+						</div>
+					</article>
+					<!-- Izdelek -->
+					<article class="izdelek">
+						<img src="./images/izdelek-2.png" alt="" />
+						<div class="izdelek-text">
+							<h3>akacijev med</h3>
+							<p>
+								količina: 250g
+							</p>
+							<button class="btn">Dodaj v košarico</button>
+						</div>
+					</article>
+					<!-- Izdelek -->
+					<article class="izdelek">
+						<img src="./images/izdelek-3.png" alt="" />
+						<div class="izdelek-text">
+							<h3>kostanjev med</h3>
+							<p>
+								količina: 130g
+							</p>
+							<button class="btn">Dodaj v košarico</button>
+						</div>
+					</article>
+					<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+				</div>
+			</div>
+		</section>
+		<!-- END OF IZDELKI -->
 
-    <!-- GALERIJA -->
-    <section id="galerija" class="galerija bg-black">
-      <h2 class="h2-heading frame white">galerija</h2>
-      <div class="container"></div>
-    </section>
-    <!-- END OF GALERIJA -->
-    <!-- ABAUT -->
-    <section id="abaut" class="abaut bg-white">
-      <h2 class="h2-heading black frame">o meni</h2>
-    </section>
-    <!-- END OF ABAUT -->
+		<!-- GALERIJA -->
+		<section id="galerija" class="galerija bg-black">
+			<h2 class="h2-heading frame white">galerija</h2>
+			<div class="container">
+				<div class="grid">
+					<div class="grid-col grid-col--1"></div>
+					<div class="grid-col grid-col--2"></div>
+					<div class="grid-col grid-col--3"></div>
+					<div class="grid-col grid-col--4"></div>
 
-    <!-- KONTAKT -->
-    <section id="kontakt" class="kontakt bg-black">
-      <h2 class="h2-heading frame white">kontakt</h2>
-    </section>
-    <!-- END OF KONTAKT -->
+					<a class="grid-item" href="images/img_01.jpg">
+						<img src="images/img_01.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_02.jpg">
+						<img src="images/img_02.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_03.jpg">
+						<img src="images/img_03.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_04.jpg">
+						<img src="images/img_04.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_05.jpg">
+						<img src="images/img_05.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_06.jpg">
+						<img src="images/img_06.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_07.jpg">
+						<img src="images/img_07.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_08.jpg">
+						<img src="images/img_08.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_09.jpg">
+						<img src="images/img_09.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_10.jpg">
+						<img src="images/img_10.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_11.jpg">
+						<img src="images/img_11.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_12.jpg">
+						<img src="images/img_12.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_14.jpg">
+						<img src="images/img_14.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_13.jpg">
+						<img src="images/img_13.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_15.jpg">
+						<img src="images/img_15.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_16.jpg">
+						<img src="images/img_16.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_17.jpg">
+						<img src="images/img_17.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_18.jpg">
+						<img src="images/img_18.jpg" alt="" />
+					</a>
+					<a class="grid-item" href="images/img_19.jpg">
+						<img src="images/img_19.jpg" alt="" />
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- END OF GALERIJA -->
+		<!-- ABAUT -->
+		<section id="abaut" class="abaut bg-white">
+			<div class="container">
+				<h2 class="h2-heading black frame">o meni</h2>
+				<div class="abaut-container">
+					<img
+						class="profil-img"
+						src="images/abaut_profil_img.png"
+						alt=""
+					/>
+					<div class="abaut-content">
+						<h3>peter marin</h3>
+						<h4>Čebelar po srcu in po duši</h4>
+						<p>
+							Peter Marin, mladi čebelar iz Cvetkovcev v ormoški občini,
+							se je čebelarstva samostojno lotil pred šestimi leti:
+							"Začel sem tako rekoč čisto iz nič, saj je bilo edino, kar
+							sem slišal o čebelarstvu, pripovedovanje moje mame Marije
+							Marin, da sta se s čebelami nekoč ukvarjala njena oče in
+							dedek. Kot lesarski tehnik sem prvo zaposlitev dobil pri
+							čebelarstvu Medvedovih iz Cirkovc, kjer sem delal lesene
+							panjske okvirje. Delo me je navdušilo, in ko sem začel s
+							svojim čebelarstvom, sem si lahko vse iz lesa naredil sam
+							in mi torej ni bilo treba vsega kupiti."
+						</p>
+						<p>
+							Kasneje se je zaposlil v Lesnini in zadnja leta dela v
+							ptujskem podjetju Mark metal. Začel je s tremi panji čebel,
+							jih vsako leto dodal deset in ta čas jih ima 70.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF ABAUT -->
 
-    <script src="./main.js"></script>
-  </body>
+		<!-- KONTAKT -->
+		<section id="kontakt" class="kontakt bg-black">
+			<h2 class="h2-heading frame white">kontakt</h2>
+		</section>
+		<!-- END OF KONTAKT -->
+
+		<!-- SCRIPTS -->
+		<!-- jQuery JS file link -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+
+		<!-- colcade JS file (grid gallery) -->
+		<script src="https://unpkg.com/colcade@0/colcade.js"></script>
+
+		<!-- Magnific Popup core JS file -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+
+		<!-- Main JS file -->
+		<script src="js/main.js"></script>
+	</body>
 </html>

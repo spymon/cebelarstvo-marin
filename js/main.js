@@ -18,11 +18,11 @@ $(document).ready(function() {
 		items: '.grid-item'
 	});
 
-	/* $('.grid').magnificPopup({
+	$('.grid').magnificPopup({
 		delegate: 'a',
 		type: 'image',
 		gallery: {
 			enabled: true
-		} 
-	});*/
+		}
+	});
 });

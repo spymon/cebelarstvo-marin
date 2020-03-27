@@ -557,10 +557,12 @@ header nav ul a:hover {
 	.kontakt-card {
 		margin-bottom: 64px;
 		width: 100%;
+		min-width: 100%;
 	}
 
 	.kontakt-form {
 		width: 100%;
+		min-width: 100%;
 		margin: 0 auto;
 	}
 }

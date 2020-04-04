@@ -45,7 +45,7 @@ body {
 
 .h2-heading {
 	display: inline-block;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-family: 'Prompt', sans-serif;
 	text-transform: capitalize;
 	letter-spacing: var(--primaryLetterSpacing);
@@ -369,27 +369,6 @@ header nav ul a:hover {
 	box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* GALERIJA MEDIA */
-@media (min-width: 768px) {
-	.grid-col--2 {
-		display: block;
-	}
-
-	.grid-col {
-		padding: 0 0.5em;
-	}
-
-	.grid a {
-		margin-bottom: 0.5em;
-	}
-}
-
-@media (min-width: 1080px) {
-	.grid-col--3 {
-		display: block;
-	}
-}
-
 /* ABAUT */
 .abaut-container {
 	display: grid;
@@ -526,6 +505,13 @@ header nav ul a:hover {
 }
 
 /* Header media */
+
+@media (min-width: 1080px) {
+	.grid-col--3 {
+		display: block;
+	}
+}
+
 @media (max-width: 900px) {
 	.container {
 		width: 80vw;
@@ -564,6 +550,24 @@ header nav ul a:hover {
 		width: 100%;
 		min-width: 100%;
 		margin: 0 auto;
+	}
+}
+
+@media (min-width: 768px) {
+	.h2-heading {
+		font-size: 3rem;
+	}
+
+	.grid-col--2 {
+		display: block;
+	}
+
+	.grid-col {
+		padding: 0 0.5em;
+	}
+
+	.grid a {
+		margin-bottom: 0.5em;
 	}
 }
 
